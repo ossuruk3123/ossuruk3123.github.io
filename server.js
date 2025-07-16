@@ -24,7 +24,7 @@ app.use(express.json());
 
 app.use(cors());
 
-mongoose.connect('mongodb+srv://<db_username>:<db_password>@bottest.jvb7ir9.mongodb.net/?retryWrites=true&w=majority&appName=BotTest', { useNewUrlParser: true }) // add info
+mongoose.connect('mongodb+srv://myuser:terbisil1@bottest.jvb7ir9.mongodb.net/?retryWrites=true&w=majority&appName=BotTest', { useNewUrlParser: true }) // add info
 const db = mongoose.connection
 db.on('error', (error) => console.error(error))
 db.once('open', () => console.log('Connected to database.'));
